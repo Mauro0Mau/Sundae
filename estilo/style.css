@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* Importameto das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');/*font-family: 'Amatic SC', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');/*font-family: 'Gruppo', sans-serif;*/
+
+@font-face{
+    font-family: 'Sundae';
+    src: url('../fonte/Ice\ Cream.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*Fim dos importamentos de fontes*/
+
+:root{
+
+    /*Palera Marrom*/
+    --cor-1: #774936;
+    --cor-2: #8a5a44;
+    --cor-3: #9d6b53;
+    --cor-4: #b07d62;
+    --cor-5: #c38e70;
+
+
+    /*Paleta Rosa*/
+    --cor-1r: #f9c0c2;
+    --cor-2r: #FAA7AE;
+    --cor-3r: #F78594;
+    --cor-4r: #FDD9DD;
+    --cor-5r: #df6f82;
+
+    /*Palera Branca*/
+    --cor-1b:#984620;
+    --cor-2b:#F9D67F;
+    --cor-3b:#F6D16A;
+    --cor-4b:#FDF0C9;
+    --cor-5b:#FCE3A3;
+
+    --fonte-principal: 'Amatic SC', sans-serif;
+    --fonte-sundae:'Sundae', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    background: var(--cor-1r) url(../imagens/icecream-wallpaper.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    background: linear-gradient(to left, rgba(255, 112, 136, 0.959),rgba(255, 156, 173, 0.862), rgba(255, 112, 136, 0.959));
+    max-width: 120em;
+    padding: 5px;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.548);
+    border-bottom-style: solid;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.327)
+}
+
+header h1{
+    font-family: var(--fonte-sundae);
+    font-weight: normal;
+    font-size: 6vw;
+    padding: 10px 0px;
+    margin: auto;
+    width: 10em;
+    border: 5px solid var(--cor-1b);
+    border-radius: 15px;
+}
+
+header h2{
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 3.5vw;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 6px;
+    height: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.5s;
+}
+
+header a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+main{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 70em;
+    margin: auto;
+}
+
+main h1{
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+article h2{
+    font-size: 2em;
+    margin: 10px 0px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+article.morango{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3r);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+article.chocolate{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+article.baunilha{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3b);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+aside h1{
+    font-size: 2em;
+}
+
+aside{
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor-5r),var(--cor-5r), var(--cor-4),var(--cor-4), rgb(254, 179, 40),rgb(254, 179, 40),var(--cor-2b), var(--cor-2b));
+}
+
+article.adicionais{
+    margin-top: 10px;
+    background-color: #FCE3A3;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+article h3{
+    background-image: linear-gradient(to right, var(--cor-3b), transparent);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 20px;
+}
+
+article.curiosidades{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(-45deg, var(--cor-4r),var(--cor-1r), var(--cor-2r), var(--cor-3r));
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+}
+
+footer{
+    background-color: var(--cor-4r);
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p{
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 1s;
+}
+
+footer a:hover{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--cor-5);
+    text-shadow:  0px 0px 9px rgb(255, 255, 255);
+    color: white;
+}
