@@ -66,10 +66,9 @@ header h1{
     font-family: var(--fonte-sundae);
     font-weight: normal;
     font-size: 6em;
-    padding: 10px 0px;
+    padding: 10px;
     margin: auto;
-    border-spacing: 0x;
-    border: 5px solid var(--cor-1b);
+    background-color: var(--cor-4r);
     border-radius: 15px;
 }
 
